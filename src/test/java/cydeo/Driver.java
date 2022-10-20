@@ -25,7 +25,7 @@ public class Driver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            if (System.getProperty("BROWSER") == null) {
+            if (System.getProperty("BROWSER") == null) { // this comment is for triggering Jenkins from GitHub by pushing the code
                 browser = ConfigurationReader.getProperty("browser");
             } else {
                 browser = System.getProperty("BROWSER");
